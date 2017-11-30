@@ -1,0 +1,15 @@
+.hero {
+  background: {
+    image: url("http://via.placeholder.com/1366x768");
+    repeat: no-repeat;
+    position: center center;
+    size: cover;
+  }
+
+  height: 100vh;
+}
+
+.title h1 {
+  padding-top: 25vh;
+  letter-spacing: 3px;
+}

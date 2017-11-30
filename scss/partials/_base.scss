@@ -1,0 +1,47 @@
+@import "modules/all";
+
+// Font weights
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// Barlow Semi Condensed
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,600,700');
+$barlow-semi-condensed: 'Barlow Semi Condensed', sans-serif;
+
+// Playfair display
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+$playfair-display: 'Playfair Display', serif;
+
+// Base Font
+$base-font-family: $playfair-display;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+// Headings
+$header-font-weight: $bold;
+$box: border-box;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $base-font-family;
+  font-weight: $header-font-weight;
+}
+
+* {
+  -webkit-box-sizing: $box;
+   -moz-box-sizing: $box;
+        box-sizing: $box;
+}
+
+html, body {
+  background: $background-color;
+  overflow: hidden;
+}
+
+.centered {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+}
