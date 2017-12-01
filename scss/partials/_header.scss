@@ -1,0 +1,28 @@
+header {
+  @extend %center-txt;
+  @include hero("winter-landscape-2571788_1920.jpg");
+}
+
+header h1 {
+  margin-top: 25vh;
+  //text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 0.2em;
+}
+
+header #arrow {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  background: grey;
+  width: 5vw;
+  height: 5vh;
+  -webkit-clip-path: polygon(0 0, 0 100%, 46% 46%);
+  clip-path: polygon(0 0, 0 100%, 46% 46%);
+  transition: 0.5s;
+
+  &:hover, &:active {
+    background-color: $social-color;
+  }
+  cursor: pointer;
+}

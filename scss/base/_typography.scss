@@ -1,0 +1,52 @@
+// Barlow Semi Condensed
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,600,700');
+
+// Playfair display
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i');
+
+$barlow-semi-condensed: 'Barlow Semi Condensed', sans-serif;
+$playfair-display: 'Playfair Display', serif;
+
+// Font stacks
+$sans-serif: $barlow-semi-condensed;
+$serif: $playfair-display;
+
+
+// Font weights
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// Font size
+$base-font-size: 16px;
+
+// Body general styles
+body {
+  font-size: $base-font-size;
+  font-family: $sans-serif;
+  font-weight: $light;
+  line-height: 1.6;
+  color: $text-color;  //color variable set elsewhere
+  -webkit-text-size-adjust: 100%;  //fix for iOS
+}
+
+// Heading styles
+
+$heading-font-family: $serif;
+$heading-font-weight: $bold;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  color: $heading-color;
+}
+
+h1, h2 { line-height: 1.1; }
+h3, h4 { line-height: 1.3; }
+h1 { font-size: 400%; letter-spacing: -2px; }
+h2 { font-size: 250%; letter-spacing: -1px; }
+h3 { font-size: 200%; }
+h4 { font-size: 180%; }
+h5 { font-size: 130%; }
+h6 { font-size: 100%; }

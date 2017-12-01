@@ -1,10 +1,15 @@
 // Third-party
+@import "vendor/bourbon/bourbon";
 @import "vendor/normalize";
 @import "vendor/skeleton";
-@import "vendor/bourbon/bourbon";
 
 // Modules and Variables
-@import "partials/base";
+@import "abstracts/all";
+
+// Base
+@import "base/base";
+@import "base/typography";
 
 // Partials
-@import "partials/hero";
+@import "partials/header";
+@import "partials/content";
