@@ -663,7 +663,7 @@ body {
   z-index: 100; }
 
 .social svg {
-  fill: #3C0919 !important; }
+  fill: #3C0919; }
 
 body {
   font-size: 16px;
@@ -737,8 +737,9 @@ header .social * {
   margin: 0 5px;
   width: 40px;
   height: 40px; }
-  header .social *:hover {
-    fill: #A61955; }
+
+.social a:hover svg {
+  fill: #A61955; }
 
 .email {
   margin-top: 10vh;
