@@ -18,8 +18,10 @@ arrowToRight.addEventListener('click', function (e) {
   scrollIt(content);
   setTimeout (function() {
     arrowToRight.style.display = "none";
+  });
+  setTimeout (function() {
     arrowToLeft.style.display = "block";
-  }, 1000);
+  }, 800);
   return false;
 });
 
@@ -28,8 +30,10 @@ arrowToLeft.addEventListener('click', function (e) {
   scrollIt(hero[0]);
   setTimeout (function() {
     arrowToLeft.style.display = "none";
-    arrowToRight.style.display = "block";
   });
+  setTimeout (function() {
+    arrowToRight.style.display = "block";
+  }, 800);
   return false;
 });
 

@@ -13,12 +13,12 @@ section#content {
 }
 
 #arrow2 {
-  background: grey;
+  background: $accent-color;
   z-index: 20;
   position: fixed;
   display: none;
   left: 0%;
-  top: 50%;
+  top: 45%;
   width: 5vw;
   height: 5vh;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 46% 46%);

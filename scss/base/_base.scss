@@ -15,3 +15,14 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+
+[id^="arrow"] {
+  z-index: 100;
+}
+
+
+// Social Media
+
+.social svg {
+  fill: $social-color !important;
+}

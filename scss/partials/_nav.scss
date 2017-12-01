@@ -1,0 +1,32 @@
+.nav {
+  @extend %center-txt;
+  margin-top: 5vh;
+  //border-bottom: 2px dotted $light-color;
+}
+
+.nav h2 {
+  word-spacing: 0.2em;
+  letter-spacing: 0.2em;
+  font-weight: $regular;
+}
+
+.nav span {
+  cursor: pointer;
+  &:hover {
+    color: $accent-color;
+  }
+  &:first-child {
+    font-family: $serif;
+    font-style: italic;
+  }
+  &:last-child {
+    font-family: $sans-serif;
+  }
+  &.active {
+    border-bottom: 1px solid $accent-color;
+  }
+}
+
+.nav strong {
+  color: $accent-color;
+}
