@@ -768,8 +768,8 @@ section#content {
   display: none;
   left: 0%;
   top: 45%;
-  width: 5vw;
-  height: 5vh;
+  width: 10vw;
+  height: 10vh;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 50%);
   clip-path: polygon(100% 0, 100% 100%, 50% 50%);
   transition: 0.5s;
@@ -809,8 +809,8 @@ section#content {
     margin: auto;
     position: static;
     background: #A61955;
-    width: 5vw;
-    height: 5vh;
+    width: 10vw;
+    height: 10vh;
     -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0);
     clip-path: polygon(50% 50%, 0 0, 100% 0);
     transition: 0.5s;
@@ -819,7 +819,7 @@ section#content {
       background-color: #3C0919; } }
 @media (max-width: 640px) {
   header h1 {
-    margin-top: 15vh; } }
+    margin-top: 10vh; } }
 @media (max-width: 768px) {
   section#content {
     display: none;
