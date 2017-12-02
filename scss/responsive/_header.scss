@@ -1,0 +1,28 @@
+/* Using plain CSS */
+@media (max-width: 768px) {
+  header h1 {
+    margin-top: 20vh;
+  }
+
+  header #arrow {
+    margin: auto;
+    position: static;
+    background: $accent-color;
+    width: 5vw;
+    height: 5vh;
+    -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0);
+clip-path: polygon(50% 50%, 0 0, 100% 0);
+    transition: 0.5s;
+
+    &:hover, &:active {
+      background-color: $social-color;
+    }
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 640px) {
+  header h1 {
+    margin-top: 15vh;
+  }
+}

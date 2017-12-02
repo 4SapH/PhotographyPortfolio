@@ -8,12 +8,14 @@ $box: border-box;
 
 html, body {
   background: $bg-color;
+  min-height: 100vh;
+  min-width: 100vw;
 //  overflow: hidden;
 }
 
 body {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 [id^="arrow"] {

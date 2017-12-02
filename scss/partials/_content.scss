@@ -21,8 +21,8 @@ section#content {
   top: 45%;
   width: 5vw;
   height: 5vh;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 46% 46%);
-  clip-path: polygon(100% 0, 100% 100%, 46% 46%);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%);
   transition: 0.5s;
 
   &:hover {

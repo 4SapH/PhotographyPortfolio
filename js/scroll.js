@@ -4,7 +4,7 @@ function scrollIt(element) {
   window.scrollTo({
     'behavior': 'smooth',
     'left': element.offsetLeft,
-    'top': 0
+    'top': element.offsetTop
   });
 }
 
@@ -13,26 +13,38 @@ const arrowToRight = document.querySelector("#arrow");
 const arrowToLeft = document.querySelector("#arrow2");
 const content = document.querySelector("#content");
 
+const mq = window.matchMedia( "(max-width: 768px" );
+
 arrowToRight.addEventListener('click', function (e) {
   e.preventDefault();
+  content.style.display = "block";
   scrollIt(content);
   setTimeout (function() {
     arrowToRight.style.display = "none";
   });
   setTimeout (function() {
     arrowToLeft.style.display = "block";
+    if (mq.matches) {
+      hero[0].style.display = "none";
+      content.style.top = "0%";
+    }
   }, 800);
   return false;
 });
 
 arrowToLeft.addEventListener('click', function (e) {
   e.preventDefault();
+  if (mq.matches) {
+    content.style.top = "100%";
+  }
+  hero[0].style.display = "block";
   scrollIt(hero[0]);
   setTimeout (function() {
     arrowToLeft.style.display = "none";
   });
   setTimeout (function() {
     arrowToRight.style.display = "block";
+    content.style.display = "none";
   }, 800);
   return false;
 });

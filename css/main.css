@@ -653,11 +653,13 @@ header, .nav {
   box-sizing: border-box; }
 
 html, body {
-  background: #ECE2D9; }
+  background: #ECE2D9;
+  min-height: 100vh;
+  min-width: 100vw; }
 
 body {
   position: relative;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 [id^="arrow"] {
   z-index: 100; }
@@ -725,8 +727,8 @@ header #arrow {
   background: #A61955;
   width: 5vw;
   height: 5vh;
-  -webkit-clip-path: polygon(0 0, 0 100%, 46% 46%);
-  clip-path: polygon(0 0, 0 100%, 46% 46%);
+  -webkit-clip-path: polygon(0 0, 0 100%, 50% 50%);
+  clip-path: polygon(0 0, 0 100%, 50% 50%);
   transition: 0.5s;
   cursor: pointer; }
   header #arrow:hover, header #arrow:active {
@@ -768,8 +770,8 @@ section#content {
   top: 45%;
   width: 5vw;
   height: 5vh;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 46% 46%);
-  clip-path: polygon(100% 0, 100% 100%, 46% 46%);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%);
   transition: 0.5s;
   cursor: pointer; }
   #arrow2:hover {
@@ -797,5 +799,42 @@ section#content {
 
 .nav strong {
   color: #A61955; }
+
+/* Using plain CSS */
+@media (max-width: 768px) {
+  header h1 {
+    margin-top: 20vh; }
+
+  header #arrow {
+    margin: auto;
+    position: static;
+    background: #A61955;
+    width: 5vw;
+    height: 5vh;
+    -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0);
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+    transition: 0.5s;
+    cursor: pointer; }
+    header #arrow:hover, header #arrow:active {
+      background-color: #3C0919; } }
+@media (max-width: 640px) {
+  header h1 {
+    margin-top: 15vh; } }
+@media (max-width: 768px) {
+  section#content {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: 10;
+    top: 100%;
+    left: 0%; }
+
+  #arrow2 {
+    margin: auto;
+    position: static;
+    -webkit-clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+    clip-path: polygon(50% 50%, 0 100%, 100% 100%); } }
 
 /*# sourceMappingURL=main.css.map */
